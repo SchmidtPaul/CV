@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.6)  7 AUG 2020 14:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.6)  7 AUG 2020 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**CVeng.tex
-(./CVeng.tex
+**CVger.tex
+(./CVger.tex
 LaTeX2e <2020-02-02> patch level 5
 L3 programming layer <2020-07-17> (./awesome-cv.cls
 Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
@@ -1140,8 +1140,8 @@ Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
 \c@papers=\count446
 \@quotelevel=\count447
 \@quotereset=\count448
-(./CVeng.aux)
-\openout1 = `CVeng.aux'.
+(./CVger.aux)
+\openout1 = `CVger.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
 LaTeX Font Info:    ... okay on input line 154.
@@ -1265,9 +1265,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 154.
 LaTeX Info: Redefining \pageref on input line 154.
 LaTeX Info: Redefining \nameref on input line 154.
-(./CVeng.out) (./CVeng.out)
+(./CVger.out) (./CVger.out)
 \@outlinefile=\write7
-\openout7 = `CVeng.out'.
+\openout7 = `CVger.out'.
 
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
@@ -1280,11 +1280,11 @@ Package biblatex Info: XeTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
 Package biblatex Info: Data encoding 'utf8' specified.
 (biblatex)             No need to reencode data.
-\openout6 = `CVeng.bcf'.
+\openout6 = `CVger.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'CVeng.bbl' found.
-(./CVeng.bbl
+Package biblatex Info: ... file 'CVger.bbl' found.
+(./CVger.bbl
 LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/m/n' will be
 (Font)              scaled to size 10.0pt on input line 77.
 )
@@ -1373,10 +1373,10 @@ LaTeX Font Info:    Font shape `TU/SourceSansPro(0)/b/n' will be
 [2]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 260.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 260.
-(./CVeng.aux)
+(./CVger.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 260.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 260.
-Package rerunfilecheck Info: File `CVeng.out' has not changed.
+Package rerunfilecheck Info: File `CVger.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 LaTeX Warning: There were undefined references.
@@ -1385,17 +1385,17 @@ LaTeX Warning: There were undefined references.
 Package biblatex Warning: Please rerun LaTeX.
 (biblatex)                Page breaks have changed.
 
-Package logreq Info: Writing requests to 'CVeng.run.xml'.
-\openout1 = `CVeng.run.xml'.
+Package logreq Info: Writing requests to 'CVger.run.xml'.
+\openout1 = `CVger.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
  39171 strings out of 481704
- 781800 string characters out of 5932119
- 1589288 words of memory out of 5000000
+ 781809 string characters out of 5932119
+ 1589291 words of memory out of 5000000
  55650 multiletter control sequences out of 15000+600000
  539428 words of font info for 117 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,11n,112p,1326b,4704s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,11n,112p,1292b,4704s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on CVeng.pdf (2 pages).
+Output written on CVger.pdf (2 pages).
