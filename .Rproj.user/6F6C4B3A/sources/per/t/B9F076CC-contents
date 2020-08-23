@@ -1,0 +1,104 @@
+---
+surname: Dr. Paul Schmidt
+profilepic: pic.jpg
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: Dr. sci. agr.
+position: Data Scientist / Biostatistiker
+address: Hamburg, Deutschland
+phone: +49 172 3091577
+email: schmidtpaul1989@outlook.com
+linkedin: schmidtpaul1989
+researchgate: Paul_Schmidt17
+github: SchmidtPaul
+headcolor: 414141
+output: 
+  vitae::awesomecv:
+  keep_tex: true
+---
+  
+```{r setup, include=FALSE}
+library(dplyr)
+library(RefManageR)
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<!-- Overwrite the default footer to have 1/n page numbering: -->
+\makecvfooter
+  {`r format(Sys.time(), '%B, %Y')`}
+    {Dr. Paul Schmidt~~~·~~~Lebenslauf}
+  {\thepage/\pageref{LastPage}}
+
+# Berufserfahrung
+
+```{r employment}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Verschiedene statistische Analysen von Rohdaten bis zum Schlussbericht für z.B. jährliches post-market monitoring (Umfrage; Landwirtschaft), Risikobewertung (Metaanalyse; Epidemiologie), mehrjähriger Feldversuche (Experiment; Umwelt), Geografische Verteilung (GIS; Landesamt)",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Implementierung neuer / Optimierung vorhandener SOPs (z.B. für systematic literature reviews und Metaanalysen), indem die Funktionalität vorhandener Software besser genutzt wird und zusätzlich ergänzende Software/Tools eingesetzt werden",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Koordinieren der Kommunikation und des Zeitmanagements von Projekten",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Durchführung von intensiver Recherche und Verfassen von wissenschaftlichen Berichten",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Entwicklung und Durchführung von statistischen Workshops",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg", "Seit Jan 2019", "Korrekturlesen speziell englischer Entwürfe von Anschreiben, Berichten und wissenschaftlicher Publikationen",
+  "Workshop Coach", "Freelancer (nebenberuflich)", "siehe 'Lehre' Abschnitt unten", "Seit Nov 2018", "Entwicklung und Durchführung von Workshops zu Statistik mit R; specific content and language according to the contractor",
+  "Workshop Coach", "Freelancer (nebenberuflich)", "siehe 'Lehre' Abschnitt unten", "Seit Nov 2018", "Provide corresponding material on my websites (see 'Other skills' section below)",
+  "Research associate ", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Dec 2018", "Personalized consulting (ranging from single-appointment to project-accompanying) for students and research associates in terms of experimental design, data handling, statistical analyses and/or presentation of results",
+  "Research associate ", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Dec 2018", "Develop, conduct and manage yearly statistical analysis of yield stability data for external company",
+  "Research associate ", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Dec 2018", "Develop, organize and teach workshops in statistics, R and SAS",
+  "Research associate ", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Dec 2018", "Supervise student writing his MSc thesis",
+  "Junior Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock, Germany", "Jan 2015 - Aug 2015", "Streamline statistical analyses of monitoring data",
+  "Junior Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock, Germany", "Jan 2015 - Aug 2015", "Implement SOP for systematic literature reviews",
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+# Ausbildung
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Dr. sc. agr.", "Universität Hohenheim", "Stuttgart", "Sep 2015 - Nov 2019", "Doktorand im Fachgebiet Biostatistik unter Prof. Dr. Hans-Peter Piepho",
+  "Dr. sc. agr.", "Universität Hohenheim", "Stuttgart", "Sep 2015 - Nov 2019", "Kumulative Doktorarbeit: 'Estimating heritability in plant breeding programs' benotet mit 'sehr gut'",
+  "Visiting PhD student", "Purdue University", "West Lafayette, IN, USA", "Sep 2015 - Dez 2015", "Gastdoktorand im Fachgebiet statistical bioinformatics unter Prof. Dr. Rebecca Whitbeck Doerge",
+  "MSc Crop Science: Plant Breeding", "Universität Hohenheim", "Stuttgart", "Okt 2012 - Dez 2014", "Vertiefung in Biostatistik und Pflanzenzüchtung",
+  "MSc Crop Science: Plant Breeding", "Universität Hohenheim", "Stuttgart", "Okt 2012 - Dez 2014", "MSc Thesis: 'Statistical Evaluation and Analysis of PACTS trials as a series of on-farm strip trials without replicates' benotet mit 1.0",
+  "BSc Agrarbiologie", "Universität Hohenheim", "Stuttgart", "Okt 2009 - Sep 2012", "Vertiefung in Genetik und Pflanzenwissenschaften",
+  "BSc Agrarbiologie", "Universität Hohenheim", "Stuttgart", "Okt 2009 - Sep 2012", "BSc Thesis: 'Cumulative effects of glyphosate trace concentrations during root exposition of winter wheat' benotet mit 1.0",
+  "Schüleraustausch", "Alexander Central High School", "Taylorsville, NC, USA", "Aug 2006 - Jul 2007", "Vollendung des Abschlussjahres samt Erhalt eines High School Diploms") %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Relevante Fähigkeiten
+
+**Kommunikation:** Datenvisualisierung, Datenanalyse Bericht, wissenschaftliche Publikationen, Präsentationen
+
+**Software:** R, SAS, SPSS, ASReml, Excel, Word, PowerPoint, Citavi, Adobe Acrobat Pro, Latex
+
+**Statistik:** (generalisierte) lineare (gemischte) Modelle, deskritpive & schließende Datenanalyse, Versuchsdesign
+
+**Webseiten:** 
+  
+  * `https://schmidtpaul.github.io/MMFAIR/`
+  * `https://schmidtpaul.github.io/crashcouRse/`
+
+\pagebreak
+
+# Lehre
+
+*  Workshopleiter, Real-time consultation on statistics and mixed models in R, Uni Kassel, 2d, Mär 2020
+*  Workshopleiter, Basics of applied statistics, Uni Rostock, 2d, Dez 2019
+*  Workshopleiter, Data Science in den Naturwiss. mit R (Teil 2), Thünen Inst., Braunschweig, 3d, Nov 2019
+*  Workshopleiter, Data Science in den Naturwiss. mit R (Teil 1), Thünen Inst., Braunschweig, 3d, Okt 2019
+*  Workshopleiter, Essential basics of statistics, Uni Rostock, 2d, Sep 2019
+*  Workshopleiter, Gemischte Modelle in R, Thünen Inst., Braunschweig, 3d, Nov 2018
+*  Workshopleiter, Implementation of yield stability assessment with ASReml-R, Bangladesh Rice Research Inst., Gazipur, Bangladesh, 3h, Mai 2018
+*  Workshopleiter, Statistical analysis with SAS, Uni Hohenheim, Stuttgart, 3d, monthly 2016-2018
+*  Workshopleiter, Statistical analysis with R, Uni Hohenheim, Stuttgart, 3d, monthly 2016-2018
+*  Lehrassistent, Biometrie / Statistik Vorlesung, Uni Hohenheim, Stuttgart, 4h, weekly 2014-2018
+
+# Publikationen
+
+```{r research-papers}
+bibliography_entries("publications.bib") %>%
+  arrange(desc(year), surnames)
+```

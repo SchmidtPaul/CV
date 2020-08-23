@@ -56,6 +56,8 @@
 \RequirePackage{geometry}
 % Needed to make header & footer effeciently
 \RequirePackage{fancyhdr}
+% Needed to get 1/2 etc. as page number
+\RequirePackage{lastpage}
 % Needed to manage colors
 \RequirePackage{xcolor}
 % Needed to use \ifxetex-\else-\fi statement
@@ -85,6 +87,7 @@
 \RequirePackage{parskip}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
+
 \hypersetup{%
   pdftitle={},
   pdfauthor={},
@@ -386,7 +389,7 @@
 %% Define helper macros a user can change easily
 % Header
 \newcommand{\acvHeaderNameDelim}{\space}
-\newcommand{\acvHeaderAfterNameSkip}{.4mm}
+\newcommand{\acvHeaderAfterNameSkip}{1.6mm}
 \newcommand{\acvHeaderAfterPositionSkip}{.4mm}
 \newcommand{\acvHeaderAfterAddressSkip}{-.5mm}
 \newcommand{\acvHeaderIconSep}{\space}
@@ -651,7 +654,7 @@
   \begin{center}
     \setlength\tabcolsep{0pt}
     \setlength{\extrarowheight}{0pt}
-    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} C{1.5cm} L{\textwidth - 4.0cm} R{2.5cm}}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} R{1.5cm} L{\textwidth - 8.0cm} R{6.5cm}}
 }{%
     \end{tabular*}
   \end{center}

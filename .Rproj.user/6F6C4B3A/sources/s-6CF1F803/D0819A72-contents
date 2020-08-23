@@ -1,3 +1,0 @@
-library(scholar)
-scholar_profile <- get_profile("5IVOKaoAAAAJ")
-get_publications(id = "5IVOKaoAAAAJ")
