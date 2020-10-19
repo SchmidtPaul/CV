@@ -1,0 +1,12 @@
+---
+title: "Dr. Paul Schmidt"
+output: 
+  html_document:
+    css: ["contactinfostyles.css"]
+    includes:
+      after_body: contactinfofooter.html		
+---
+
+<img src="https://avatars3.githubusercontent.com/u/31928213?s=400&u=d5ca44cc7f39c7f4e2e79b4cffeeb3d0d0a321fb&v=4" style="width:25%; margin-right: 20px" align="left">
+
+Hi there!
