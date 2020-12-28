@@ -1,7 +1,7 @@
 ---
 name: Dr.
 surname: Paul Schmidt
-profilepic: pic.jpg
+profilepic: contactinfo/pic.jpg
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: Dr. sci. agr.
 position: Data Scientist / Biostatistician
@@ -11,26 +11,21 @@ email: schmidtpaul1989@outlook.com
 linkedin: schmidtpaul1989
 researchgate: Paul_Schmidt17
 github: SchmidtPaul
-aboutme: I am an analytically thinking, solution-orientied team player and confident that my academic background, reliable work ethic and international experience in communicating data science will make me an immediate asset at Corteva Agriscience and allow me to contribute to the team's success.
 headcolor: 414141
 output: 
   vitae::awesomecv:
     keep_tex: true
 ---
 
-<!-- Overwrite the default footer to have 1/n page numbering: -->
-\makecvfooter
-  {`r format(Sys.time(), '%B, %Y')`}
-    {Dr. Paul Schmidt~~~·~~~Curriculum Vitae}
-  {\thepage/\pageref{LastPage}}
-
 ```{r setup, include=FALSE}
-library(dplyr)
-library(RefManageR)
 library(tidyverse)
+library(RefManageR)
 library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+<!-- Overwrite the default footer to have 1/n page numbering: -->
+\makecvfooter{`r format(Sys.time(), '%B, %Y')`}{Dr. Paul Schmidt~~~·~~~Curriculum Vitae}{\thepage/\pageref{LastPage}}
 
 # Professional experience
 
@@ -54,6 +49,7 @@ tribble(
 ```
 
 # Education
+
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
@@ -88,13 +84,31 @@ tribble(
   \cvskill  {Presentation}
   {data visualization, data analysis reports, scientific publications, presentations} 
   
-  \cvskill{Websites}{\textbf{Eng:} https://schmidtpaul.github.io/MMFAIR/ , \textbf{Ger:} https://schmidtpaul.github.io/crashcouRse/ }
+  \cvskill{Websites}{https://schmidtpaul.github.io/MMFAIR/0contactinfo.html}
 
 \end{cvskills}
 
 # Teaching
 
 \begin{cvhonors}
+
+  \cvhonor
+    {Instructor  }
+    {Planning exp. designs, rep. measures, and their analyses in R}
+    {Kassel Univ. (via zoom), 2d}
+    {Nov 2020  }
+    
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Nov 2020  } 
+    
+  \cvhonor
+    {Instructor  }
+    {Experimental Design - Practicals in R}
+    {CIHEAM Zaragoza (via zoom), 2d}
+    {Oct 2020  }
 
   \cvhonor
     {Instructor  }
@@ -158,9 +172,14 @@ tribble(
         
 \end{cvhonors}
 
-# Publications
+# Scientific publications
+
+\footnotesize
 
 ```{r research-papers}
-bibliography_entries("publications.bib") %>%
-  arrange(desc(year), surnames)
+vitae::bibliography_entries("contactinfo/publications.bib") %>%
+  select(-publisher, -`publisher-place`, -genre, -`title-short`) %>% 
+  replace(is.na(.), "-") %>% 
+  arrange(desc(issued), id)
 ```
+

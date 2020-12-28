@@ -1,7 +1,7 @@
 ---
 name: Dr.
 surname: Paul Schmidt
-profilepic: pic.jpg
+profilepic: contactinfo/pic.jpg
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: Dr. sci. agr.
 position: Data Scientist / Biostatistician
@@ -17,19 +17,15 @@ output:
     keep_tex: true
 ---
 
-<!-- Overwrite the default footer to have 1/n page numbering: -->
-\makecvfooter
-  {`r format(Sys.time(), '%B, %Y')`}
-    {Dr. Paul Schmidt~~~·~~~Curriculum Vitae}
-  {\thepage/\pageref{LastPage}}
-
 ```{r setup, include=FALSE}
-library(dplyr)
-library(RefManageR)
 library(tidyverse)
+library(RefManageR)
 library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
+
+<!-- Overwrite the default footer to have 1/n page numbering: -->
+\makecvfooter{`r format(Sys.time(), '%B, %Y')`}{Dr. Paul Schmidt~~~·~~~Curriculum Vitae}{\thepage/\pageref{LastPage}}
 
 # Professional experience
 
@@ -37,11 +33,9 @@ knitr::opts_chunk$set(echo = FALSE)
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Various statistical analyses from raw data to final report for e.g. yearly post-market monitoring (survey; agriculture), risk assessment (meta-analysis; epidemiology), a long-term field trial (experiment; environment), geographic distribution (geospatial; administrative office)",
-  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Implement new / streamline existing SOPs (for e.g. systematic literature reviews and meta-analyses) by making better use of in-depth functionaliy of established software and additonally via introducing complementing software/tools",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Implement new / streamline existing SOPs (for e.g. systematic literature reviews and meta-analyses) by making better use of in-depth functionality of established software and additionally via introducing complementing software/tools",
   "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Supervise project communication and time management",
-  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Conduct in-depth research and write scientific reports",
-  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Develop and teach statistical workshops",
-  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Proofread especially english tender application, report and publication drafts",
+  "Data scientist", "BioMath - Applied Statistics and Informatics in Life Sciences", "Rostock & Hamburg, Germany", "Jan 2019 - Present", "Conduct in-depth research,  write scientific reports and proofread especially English tender application, report and publication drafts",
   "Workshop Instructor", "Freelancer (part-time)", "see 'Teaching' section below", "Nov 2018 - Present", "Develop and teach workshops on statistics in R; specific content and language according to the contractor",
   "Workshop Instructor", "Freelancer (part-time)", "see 'Teaching' section below", "Nov 2018 - Present", "Provide corresponding material on my websites (see 'Other skills' section below)",
   "Research associate ", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Dec 2018", "Personalized consulting (ranging from single-appointment to project-accompanying) for students and research associates in terms of experimental design, data handling, statistical analyses and/or presentation of results",
@@ -55,16 +49,17 @@ tribble(
 ```
 
 # Education
+
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   "Dr. sc. agr.", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Nov 2019", "DFG-funded PhD student in the biostatistics unit of Prof. Dr. Hans-Peter Piepho",
-  "Dr. sc. agr.", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Nov 2019", "Cumulative doctoral thesis: 'Estimating heritability in plant breeding programs' graded 'very good'",
+  "Dr. sc. agr.", "University of Hohenheim", "Stuttgart, Germany", "Sep 2015 - Nov 2019", "Cumulative doctoral thesis: 'Estimating heritability in plant breeding programs' graded 'magna cum laude'",
   "Visiting PhD student", "Purdue University", "West Lafayette, IN, USA", "Sep 2015 - Dec 2015", "Visiting PhD student in the statistical bioinformatics unit of Prof. Dr. Rebecca Whitbeck Doerge",
   "Visiting PhD student", "Purdue University", "West Lafayette, IN, USA", "Sep 2015 - Dec 2015", "Arranged on personal initiative, this collaboration allowed for scientific exchange and inspiration at the beginning of my PhD",
-  "MSc Crop Science: Plant Breeding", "University of Hohenheim", "Stuttgart, Germany", "Oct 2012 - Dec 2014", "Specialization in biostatistics and plant breeding",
+  "MSc Crop Science: Plant Breeding", "University of Hohenheim", "Stuttgart, Germany", "Oct 2012 - Dec 2014", "Specialization in biostatistics and plant breeding (final grade 1.4)",
   "MSc Crop Science: Plant Breeding", "University of Hohenheim", "Stuttgart, Germany", "Oct 2012 - Dec 2014", "MSc Thesis: 'Statistical Evaluation and Analysis of PACTS trials as a series of on-farm strip trials without replicates' graded 1.0",
-  "BSc Agribiology (in german)", "University of Hohenheim", "Stuttgart, Germany", "Oct 2009 - Sep 2012", "Specialization in plant sciences and genetics",
+  "BSc Agribiology (in german)", "University of Hohenheim", "Stuttgart, Germany", "Oct 2009 - Sep 2012", "Specialization in plant sciences and genetics (final grade 1.9)",
   "BSc Agribiology (in german)", "University of Hohenheim", "Stuttgart, Germany", "Oct 2009 - Sep 2012", "BSc Thesis: 'Cumulative effects of glyphosate trace concentrations during root exposition of winter wheat' graded 1.0",
   "Student exchange year", "Alexander Central High School", "Taylorsville, NC, USA", "Aug 2006 - Jul 2007", "Completed senior year and obtained high school diploma") %>% 
   detailed_entries(degree, dates, uni, loc, details)
@@ -89,13 +84,31 @@ tribble(
   \cvskill  {Presentation}
   {data visualization, data analysis reports, scientific publications, presentations} 
   
-  \cvskill{Websites}{\textbf{Eng:} https://schmidtpaul.github.io/MMFAIR/ , \textbf{Ger:} https://schmidtpaul.github.io/crashcouRse/ }
+  \cvskill{Websites}{https://schmidtpaul.github.io/MMFAIR/0contactinfo.html}
 
 \end{cvskills}
 
 # Teaching
 
 \begin{cvhonors}
+
+  \cvhonor
+    {Instructor  }
+    {Planning exp. designs, rep. measures, and their analyses in R}
+    {Kassel Univ. (via zoom), 2d}
+    {Nov 2020  }
+    
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Nov 2020  } 
+    
+  \cvhonor
+    {Instructor  }
+    {Experimental Design - Practicals in R}
+    {CIHEAM Zaragoza (via zoom), 2d}
+    {Oct 2020  }
 
   \cvhonor
     {Instructor  }
@@ -159,9 +172,14 @@ tribble(
         
 \end{cvhonors}
 
-# Publications
+# Scientific publications
+
+\footnotesize
 
 ```{r research-papers}
-bibliography_entries("publications.bib") %>%
-  arrange(desc(year), surnames)
+vitae::bibliography_entries("contactinfo/publications.bib") %>%
+  select(-publisher, -`publisher-place`, -genre, -`title-short`) %>% 
+  replace(is.na(.), "-") %>% 
+  arrange(desc(issued), id)
 ```
+

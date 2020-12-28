@@ -5,15 +5,16 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "2439122545",
+    "hash" : "0",
     "id" : "4F6ED720",
-    "lastKnownWriteTime" : 1597674791,
-    "last_content_update" : 1597674791,
+    "lastKnownWriteTime" : 1609170244,
+    "last_content_update" : 1609170244382,
     "path" : "D:/Coding/CV/CVeng.Rmd",
     "project_path" : "CVeng.Rmd",
     "properties" : {
-        "cursorPosition" : "19,0",
-        "scrollLine" : "10"
+        "cursorPosition" : "175,0",
+        "docOutlineVisible" : "1",
+        "scrollLine" : "169"
     },
     "read_only" : false,
     "read_only_alternatives" : [
