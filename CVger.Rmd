@@ -1,7 +1,7 @@
 ---
 name: Dr.
 surname: Paul Schmidt
-profilepic: contactinfo/pic.jpg
+profilepic: contactinfo/pic2.jpg
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: Dr. sci. agr.
 position: Data Scientist / Biostatistiker
@@ -78,7 +78,7 @@ tribble(
   {Deutsch (Muttersprache), Englisch (kompetente, professionelle Sprachverwendung)}
   
   \cvskill  {Software}
-  {R, SAS, SPSS, ASReml, Excel, Word, PowerPoint, Citavi, Adobe Acrobat Pro, Latex} 
+  {R, SAS, SPSS, ASReml, Excel, Word, PowerPoint, Citavi, Adobe Acrobat Pro, Latex, C\#, SQL} 
   
   \cvskill  {Statistik}
   {(generalisierte) lineare (gemischte) Modelle, explorative \& deskriptive Datenauswertung, Versuchsdesign} 
@@ -93,6 +93,12 @@ tribble(
 # Lehre
 
 \begin{cvhonors}
+
+  \cvhonor
+    {Workshopleiter  }
+    {Data Science in den Naturwiss. mit R (Teil 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mär 2021  }  
 
   \cvhonor
     {Workshopleiter  }

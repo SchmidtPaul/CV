@@ -1,8 +1,8 @@
 ---
 name: Dr.
 surname: Paul Schmidt
-profilepic: contactinfo/pic.jpg
-date: "`r format(Sys.time(), '%B, %Y')`"
+profilepic: contactinfo/pic2.jpg
+date: "`r format(Sys.time(), '%m/%Y')`"
 qualifications: Dr. sci. agr.
 position: Data Scientist / Biostatistician
 address: Hamburg, Germany
@@ -76,7 +76,7 @@ tribble(
   {German (native), English (effective operational proficiency)}
   
   \cvskill  {Software}
-  {R, SAS, SPSS, ASReml, Excel, Word, PowerPoint, Citavi, Adobe Acrobat Pro, Latex} 
+  {R, SAS, SPSS, ASReml, Excel, Word, PowerPoint, Citavi, Adobe Acrobat Pro, Latex, C\#, SQL} 
   
   \cvskill  {Statistics}
   {(generalized) linear (mixed) models, exploratory \& descriptive data analysis, experimental design} 
@@ -91,6 +91,12 @@ tribble(
 # Teaching
 
 \begin{cvhonors}
+
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mar 2021  } 
 
   \cvhonor
     {Instructor  }
