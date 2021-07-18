@@ -96,6 +96,18 @@ tribble(
     {Instructor  }
     {Data science for life sciences with R (part 2)}
     {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Jul 2021  } 
+
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {May 2021  } 
+
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
     {Mar 2021  } 
 
   \cvhonor
