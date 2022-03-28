@@ -92,6 +92,48 @@ tribble(
 
 \begin{cvhonors}
 
+\cvhonor
+    {Instructor  }
+    {Data science for experimental life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mar 2022  } 
+    
+  \cvhonor
+    {Instructor  }
+    {Data science for experimental life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mar 2022  } 
+    
+  \cvhonor
+    {Instructor  }
+    {Data science for experimental life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mar 2022  } 
+
+  \cvhonor
+    {Instructor  }
+    {Data science for experimental life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mar 2022  } 
+
+  \cvhonor
+    {Instructor  }
+    {Statistics with R (Beginner)}
+    {Kassel Univ., 4d}
+    {Dec 2021  }  
+
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Jul 2021  } 
+    
+  \cvhonor
+    {Instructor  }
+    {Data science for life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {May 2021  } 
+
   \cvhonor
     {Instructor  }
     {Data science for life sciences with R (part 2)}

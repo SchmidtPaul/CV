@@ -96,6 +96,48 @@ tribble(
 
   \cvhonor
     {Workshopleiter  }
+    {Data science for experimental life sciences with R (part 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mär 2022  } 
+    
+  \cvhonor
+    {Workshopleiter  }
+    {Data Science in den exp. Naturwiss. mit R (Teil 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mär 2022  } 
+    
+  \cvhonor
+    {Workshopleiter  }
+    {Data science for experimental life sciences with R (part 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mär 2022  } 
+
+  \cvhonor
+    {Workshopleiter  }
+    {Data Science in den exp. Naturwiss. mit R (Teil 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mär 2022  } 
+
+  \cvhonor
+    {Workshopleiter  }
+    {Statistics with R (Beginner)}
+    {Uni Kassel, 4d}
+    {Dez 2021  }  
+
+  \cvhonor
+    {Workshopleiter  }
+    {Data Science in den Naturwiss. mit R (Teil 2)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Jul 2021  }  
+    
+  \cvhonor
+    {Workshopleiter  }
+    {Data Science in den Naturwiss. mit R (Teil 1)}
+    {Thünen Inst. Braunschweig (via zoom), 3d}
+    {Mai 2021  }  
+
+  \cvhonor
+    {Workshopleiter  }
     {Data Science in den Naturwiss. mit R (Teil 2)}
     {Thünen Inst. Braunschweig (via zoom), 3d}
     {Mär 2021  }  
