@@ -84,7 +84,7 @@ tribble(
   \cvskill  {Presentation}
   {data visualization, data analysis reports, scientific publications, presentations} 
   
-  \cvskill{Websites}{https://schmidtpaul.github.io/MMFAIR/0contactinfo.html}
+  \cvskill{Websites}{https://schmidtpaul.github.io/}
 
 \end{cvskills}
 
