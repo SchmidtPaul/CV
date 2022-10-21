@@ -1,0 +1,66 @@
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.1.7)  9 JAN 2022 13:40
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**CVeng.tex
+(./CVeng.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22> (./awesome-cv.cls
+Document Class: awesome-cv 2017/02/05 v1.6.1 Awesome Curriculum Vitae Class
+(c:/Users/PSchmidt/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(c:/Users/PSchmidt/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/size11.clo
+File: size11.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (c:/Users/PSchmidt/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen139
+\ar@mcellbox=\box50
+\extrarowheight=\dimen140
+\NC@list=\toks16
+\extratabsurround=\skip49
+\backup@length=\skip50
+\ar@cellbox=\box51
+) (c:/Users/PSchmidt/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\enitkv@toks@=\toks17
+\labelindent=\skip51
+\enit@outerparindent=\dimen141
+\enit@toks=\toks18
+\enit@inbox=\box52
+\enit@count@id=\count187
+\enitdp@description=\count188
+)
+
+! LaTeX Error: File `ragged2e.sty' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
+
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.56 \RequirePackage
+                    {geometry}^^M 
+Here is how much of TeX's memory you used:
+ 652 strings out of 478256
+ 10442 string characters out of 5854212
+ 309565 words of memory out of 5000000
+ 21269 multiletter control sequences out of 15000+600000
+ 403438 words of font info for 28 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 47i,0n,52p,129b,40s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+No pages of output.
